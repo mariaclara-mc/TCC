@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h3>Login Escola</h3>
+                </div>
+                <div class="card-body">
+                    {% if messages %}
+                        {% for message in messages %}
+                            <div class="alert alert-{{ message.tags }}">
+                                {{ message }}
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                    
+                    <form method="post">
+                        {% csrf_token %}
+                        
+                        <!-- Campo de Nome da Escola -->
+                        <div class="form-group mb-3">
+                            <label for="id_nome">Nome da Escola:</label>
+                            <input type="text" name="nome" id="id_nome" class="form-control" value="{{ request.POST.nome|default:'' }}">
+                        </div>
+                        
+                        <!-- Campo de Código -->
+                        <div class="form-group mb-3">
+                            <label for="id_codigo">Código:</label>
+                            <input type="text" name="codigo" id="id_codigo" class="form-control" value="{{ request.POST.codigo|default:'' }}">
+                        </div>
+                        
+                        <div class="form-group text-center">
+                            <button type="submit" class="btn btn-primary">Entrar</button>
+                        </div>
+                    </form>                                      
+                </div>
+                <div class="card-footer text-center">
+                    <p>Não tem uma escola cadastrada? <a href="{% url 'cadastrar_escola' %}">Cadastre sua escola aqui</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 
+
+
+
+
+

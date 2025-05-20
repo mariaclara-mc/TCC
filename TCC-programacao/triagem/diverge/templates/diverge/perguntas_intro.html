@@ -1,0 +1,34 @@
+{% extends 'diverge/base.html' %}
+
+{% block content %}
+<div class="container py-5">
+    <h1 class="mb-4 text-center">Antes de Iniciar o Teste</h1>
+    
+    <div class="card mb-4">
+        <div class="card-body">
+            <h5 class="card-title">Algumas orientações importantes:</h5>
+            <ul class="mb-0">
+                <li>Encontre um local tranquilo, sem distrações, para realizar o teste.</li>
+                <li>O teste leva aproximadamente 15 minutos para ser concluído.</li>
+                <li>Responda às perguntas com base em seu comportamento nos últimos 6 meses.</li>
+                <li>Não há respostas certas ou erradas. Seja sincero em suas respostas.</li>
+                <li>Se possível, consulte alguém próximo que conheça bem você.</li>
+                <li>Você poderá voltar às perguntas anteriores, se desejar revisar suas respostas.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="card mb-4">
+        <div class="card-body">
+            <h5 class="card-title">Sobre o Teste</h5>
+            <p>Este teste contém perguntas relacionadas a diversos comportamentos e características que podem indicar neurodivergências como TDAH, TEA e Dislexia.</p>
+            <p>Para cada pergunta, selecione a opção que melhor representa a frequência com que você apresenta o comportamento descrito.</p>
+            <p class="mb-0"><strong>Lembre-se:</strong> Este é apenas um teste de triagem e não substitui uma avaliação profissional.</p>
+        </div>
+    </div>
+    
+    <div class="text-center">
+        <a href="{% url 'pergunta' %}" class="btn btn-primary btn-lg">Iniciar o Teste</a>
+    </div>
+</div>
+{% endblock %}

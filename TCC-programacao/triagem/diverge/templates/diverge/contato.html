@@ -1,0 +1,192 @@
+{% extends 'diverge/base.html' %}
+{% block content %}
+<div class="container py-5">
+    <h1 class="mb-4 text-center">Contato</h1>
+    
+    <div class="row justify-content-center mb-5">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h5 class="card-title mb-4">Entre em contato com a equipe Diverge</h5>
+                    
+                    <p>
+                        Tem dúvidas, sugestões ou feedback sobre o Diverge? Ficaremos felizes em ouvir você!
+                        Entre em contato conosco através dos canais abaixo:
+                    </p>
+                    
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="bi bi-envelope-fill text-primary me-3 fs-4"></i>
+                        <div>
+                            <strong>E-mail:</strong>
+                            <a href="mailto:contato@diverge.com.br">contato@diverge.com.br</a>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="bi bi-telephone-fill text-primary me-3 fs-4"></i>
+                        <div>
+                            <strong>Telefone:</strong>
+                            <a href="tel:+551199999999">(11) 9999-9999</a>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="bi bi-geo-alt-fill text-primary me-3 fs-4"></i>
+                        <div>
+                            <strong>Endereço:</strong>
+                            <p class="mb-0">Av. Paulista, 1000, São Paulo - SP, 01310-100</p>
+                        </div>
+                    </div>
+                    
+                    <hr class="my-4">
+                    
+                    <h5 class="mb-3">Formulário de Contato</h5>
+                    
+                    <form method="post" action="{% url 'contato' %}">
+                        {% csrf_token %}
+                        
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="nome" name="nome" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="assunto" class="form-label">Assunto</label>
+                            <input type="text" class="form-control" id="assunto" name="assunto" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="mensagem" name="mensagem" rows="5" required></textarea>
+                        </div>
+                        
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h5 class="card-title mb-4">Redes Sociais</h5>
+                    
+                    <p>Siga-nos nas redes sociais para ficar por dentro das novidades:</p>
+                    
+                    <div class="d-flex justify-content-center gap-4">
+                        <a href="https://instagram.com/diverge" target="_blank" class="text-decoration-none">
+                            <div class="d-flex flex-column align-items-center">
+                                <i class="bi bi-instagram text-primary fs-2 mb-2"></i>
+                                <span>Instagram</span>
+                            </div>
+                        </a>
+                        <a href="https://facebook.com/diverge" target="_blank" class="text-decoration-none">
+                            <div class="d-flex flex-column align-items-center">
+                                <i class="bi bi-facebook text-primary fs-2 mb-2"></i>
+                                <span>Facebook</span>
+                            </div>
+                        </a>
+                        <a href="https://twitter.com/diverge" target="_blank" class="text-decoration-none">
+                            <div class="d-flex flex-column align-items-center">
+                                <i class="bi bi-twitter text-primary fs-2 mb-2"></i>
+                                <span>Twitter</span>
+                            </div>
+                        </a>
+                        <a href="https://linkedin.com/company/diverge" target="_blank" class="text-decoration-none">
+                            <div class="d-flex flex-column align-items-center">
+                                <i class="bi bi-linkedin text-primary fs-2 mb-2"></i>
+                                <span>LinkedIn</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-10">
+            <div class="card shadow">
+                <div class="card-body p-0">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.098371826049!2d-46.65390548502164!3d-23.564616184683287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c7f481fd9f%3A0x9982bfde4df54830!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1618944987123!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h5 class="card-title mb-4">Perguntas Frequentes</h5>
+                    
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    O que é o Diverge?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Diverge é uma plataforma inovadora que [descrição do seu serviço/produto]. Nosso objetivo é [objetivo da plataforma].
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Como posso me cadastrar?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    O cadastro é simples! Basta acessar nossa página inicial e clicar no botão "Cadastre-se". Siga as instruções na tela para criar sua conta.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Quais são os planos disponíveis?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Oferecemos planos variados para atender diferentes necessidades. Visite nossa página de planos para mais detalhes sobre preços e recursos incluídos em cada opção.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Como posso obter suporte técnico?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Para suporte técnico, você pode utilizar o formulário de contato nesta página ou enviar um e-mail diretamente para suporte@diverge.com.br. Nossa equipe responderá o mais breve possível.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

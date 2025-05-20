@@ -1,0 +1,56 @@
+{% extends 'diverge/base.html' %}
+
+{% block content %}
+<div class="container py-5">
+    <h1 class="mb-4 text-center">Resultados da Triagem</h1>
+    
+    <div class="alert alert-info mb-4">
+        <p><strong>Importante:</strong> Este teste não fornece diagnóstico médico. Os resultados indicam apenas possíveis características 
+        associadas a neurodivergências e devem ser discutidos com profissionais de saúde qualificados.</p>
+    </div>
+    
+    <div class="row mb-5">
+        {% for nome, dados in resultados.items %}
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">{{ nome }}</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <h6>Nível de Indícios: {{ dados.indicios }}</h6>
+                        <div class="progress">
+                            <div class="progress-bar {% if dados.percentual < 30 %}bg-success{% elif dados.percentual < 70 %}bg-warning{% else %}bg-danger{% endif %}" 
+                                 role="progressbar" style="width: {{ dados.percentual }}%;" 
+                                 aria-valuenow="{{ dados.percentual }}" aria-valuemin="0" aria-valuemax="100">
+                                {{ dados.percentual|floatformat:0 }}%
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="card-text">{{ dados.descricao }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    
+    <div class="card mb-4">
+        <div class="card-body">
+            <h5 class="card-title">Próximos Passos</h5>
+            <p>Se os resultados indicarem níveis moderados ou altos para alguma neurodivergência, considere consultar:</p>
+            <ul>
+                <li>Psicólogo</li>
+                <li>Neurologista</li>
+                <li>Psiquiatra</li>
+                <li>Profissional especializado em neurodivergências</li>
+            </ul>
+            <p>Apenas um profissional qualificado pode fornecer diagnóstico e orientação adequados.</p>
+        </div>
+    </div>
+    
+    <div class="text-center">
+        <a href="{% url 'home' %}" class="btn btn-primary">Voltar ao Início</a>
+    </div>
+</div>
+{% endblock %}

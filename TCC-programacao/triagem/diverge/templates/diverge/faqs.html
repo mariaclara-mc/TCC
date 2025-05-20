@@ -1,0 +1,142 @@
+{% extends 'diverge/base.html' %}
+
+{% block content %}
+<div class="container py-5">
+    <h1 class="mb-4 text-center">Perguntas Frequentes (FAQs)</h1>
+    
+    <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                    O que é um teste de triagem?
+                </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    <p>
+                        Um teste de triagem é uma ferramenta inicial projetada para identificar potenciais sinais ou 
+                        características que podem indicar a presença de uma condição específica. Não é um instrumento 
+                        diagnóstico, mas sim um primeiro passo que pode ajudar a determinar se uma avaliação mais 
+                        completa por um profissional é recomendada.
+                    </p>
+                    <p>
+                        No caso do Diverge, nosso teste de triagem ajuda a identificar possíveis características 
+                        neurodivergentes relacionadas ao TDAH, TEA e Dislexia, que podem merecer uma investigação mais 
+                        aprofundada por especialistas qualificados.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                    O que devo fazer após receber meu resultado?
+                </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    <p>
+                        Se o teste indicar níveis moderados ou altos de características associadas a alguma neurodivergência, 
+                        recomendamos procurar uma avaliação profissional com:
+                    </p>
+                    <ul>
+                        <li><strong>Neuropsicólogos:</strong> Especialistas em avaliação das funções cognitivas e comportamentais.</li>
+                        <li><strong>Psiquiatras:</strong> Médicos especializados em saúde mental que podem realizar diagnósticos.</li>
+                        <li><strong>Neurologistas:</strong> Médicos especializados no sistema nervoso.</li>
+                        <li><strong>Psicólogos especializados:</strong> Profissionais com experiência em neurodivergências.</li>
+                    </ul>
+                    <p>
+                        Lembre-se de que o resultado deste teste não é um diagnóstico, mas pode ser um ponto de partida 
+                        útil para discutir com profissionais de saúde.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                    Este teste é válido para todas as idades?
+                </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    <p>
+                        O teste Diverge foi desenvolvido primariamente para estudantes em idade escolar e adolescentes. 
+                        As perguntas foram elaboradas considerando comportamentos e características geralmente observáveis 
+                        nessas faixas etárias.
+                    </p>
+                    <p>
+                        Para crianças muito pequenas ou adultos, alguns itens podem não ser tão aplicáveis ou podem 
+                        manifestar-se de maneira diferente. Existem instrumentos específicos para diferentes faixas etárias 
+                        que profissionais de saúde podem utilizar em uma avaliação formal.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                    Como este teste foi desenvolvido?
+                </button>
+            </h2>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    <p>
+                        O teste Diverge foi desenvolvido como um projeto acadêmico de Trabalho de Conclusão de Curso (TCC), 
+                        com base em pesquisas científicas e critérios estabelecidos para TDAH, TEA e Dislexia.
+                    </p>
+                    <p>
+                        As perguntas foram elaboradas e revisadas por profissionais da área da saúde com experiência 
+                        em neurodivergências. O algoritmo de análise foi desenvolvido para destacar padrões de respostas 
+                        que possam indicar características associadas a cada neurodivergência abordada.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                    Posso fazer o teste para outra pessoa?
+                </button>
+            </h2>
+            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    <p>
+                        Sim, é possível preencher o teste observando os comportamentos de outra pessoa, como seu filho 
+                        ou aluno. De fato, para crianças menores, é recomendável que um adulto que conheça bem a criança 
+                        responda às perguntas com base em suas observações.
+                    </p>
+                    <p>
+                        Entretanto, é importante responder com base em observações objetivas e consistentes do comportamento 
+                        da pessoa, evitando interpretações subjetivas ou ocasionais.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                    Os dados do teste são armazenados?
+                </button>
+            </h2>
+            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    <p>
+                        Não, o Diverge não armazena permanentemente nenhum dado pessoal ou respostas dos participantes. 
+                        Todas as informações são processadas temporariamente apenas para gerar o resultado do teste e são 
+                        descartadas assim que você fecha o navegador.
+                    </p>
+                    <p>
+                        Para mais informações, consulte nossa <a href="{% url 'privacidade' %}">Política de Privacidade</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

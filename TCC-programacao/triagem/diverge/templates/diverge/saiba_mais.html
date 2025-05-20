@@ -1,0 +1,152 @@
+{% extends 'diverge/base.html' %}
+
+{% block content %}
+<div class="container py-5">
+    <h1 class="mb-4">Saiba Mais Sobre Neurodivergências</h1>
+    
+    <div class="card mb-4">
+        <div class="card-body">
+            <h5 class="card-title">O que são Neurodivergências?</h5>
+            <p>
+                Neurodivergência é um termo que reconhece que algumas pessoas processam informações de maneira diferente devido a variações neurológicas. 
+                O conceito de neurodivergência enfatiza que estas diferenças são variações naturais do cérebro humano, e não "defeitos" a serem corrigidos.
+            </p>
+            <p>
+                Muitas neurodivergências são consideradas condições do neurodesenvolvimento, que afetam como o cérebro se desenvolve e processa informações.
+                Cada pessoa neurodivergente possui um perfil único de forças e desafios.
+            </p>
+        </div>
+    </div>
+    
+    <div class="card mb-5">
+        <div class="card-header bg-primary text-white">
+            <h2 class="h5 mb-0">Principais Neurodivergências Abordadas</h2>
+        </div>
+        <div class="card-body p-0">
+            <div class="accordion" id="neurodivergenciaAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#tdahInfo">
+                            TDAH - Transtorno do Déficit de Atenção com Hiperatividade
+                        </button>
+                    </h2>
+                    <div id="tdahInfo" class="accordion-collapse collapse show" data-bs-parent="#neurodivergenciaAccordion">
+                        <div class="accordion-body">
+                            <h5>O que é?</h5>
+                            <p>
+                                O TDAH é uma condição neurobiológica caracterizada por padrões persistentes de desatenção, 
+                                hiperatividade e impulsividade que interferem no funcionamento e desenvolvimento.
+                            </p>
+                            
+                            <h5>Características comuns:</h5>
+                            <ul>
+                                <li>Dificuldade em manter a atenção em tarefas</li>
+                                <li>Facilmente distraído por estímulos externos</li>
+                                <li>Esquecimento de atividades cotidianas</li>
+                                <li>Inquietação e dificuldade em ficar parado</li>
+                                <li>Tendência a interromper ou intrometer-se</li>
+                                <li>Dificuldade em esperar sua vez</li>
+                                <li>Fala excessiva e responde antes que a pergunta seja concluída</li>
+                            </ul>
+                            
+                            <h5>Tratamento e Suporte:</h5>
+                            <p>
+                                O tratamento geralmente envolve uma abordagem multidisciplinar, incluindo terapia comportamental, 
+                                adaptações educacionais e, em alguns casos, medicação. Estratégias organizacionais e de administração
+                                do tempo também são importantes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#teaInfo">
+                            TEA - Transtorno do Espectro Autista
+                        </button>
+                    </h2>
+                    <div id="teaInfo" class="accordion-collapse collapse" data-bs-parent="#neurodivergenciaAccordion">
+                        <div class="accordion-body">
+                            <h5>O que é?</h5>
+                            <p>
+                                O TEA é uma condição neurodesenvolvimental caracterizada por diferenças na comunicação social,
+                                interação social e padrões restritos e repetitivos de comportamento, interesses ou atividades.
+                            </p>
+                            
+                            <h5>Características comuns:</h5>
+                            <ul>
+                                <li>Diferenças na reciprocidade social e emocional</li>
+                                <li>Padrões distintos de comunicação não-verbal</li>
+                                <li>Desafios no desenvolvimento e manutenção de relacionamentos</li>
+                                <li>Movimentos, uso de objetos ou fala repetitivos</li>
+                                <li>Insistência em rotinas e padrões ritualizados</li>
+                                <li>Interesses fixos e altamente restritos</li>
+                                <li>Hiper ou hiporreatividade a estímulos sensoriais</li>
+                            </ul>
+                            
+                            <h5>Tratamento e Suporte:</h5>
+                            <p>
+                                As abordagens centram-se em apoiar o desenvolvimento e proporcionar estratégias para os desafios
+                                específicos. Intervenções educacionais, terapia da fala e linguagem, terapia ocupacional e
+                                suportes para a comunicação social são frequentemente benéficos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dislexiaInfo">
+                            Dislexia
+                        </button>
+                    </h2>
+                    <div id="dislexiaInfo" class="accordion-collapse collapse" data-bs-parent="#neurodivergenciaAccordion">
+                        <div class="accordion-body">
+                            <h5>O que é?</h5>
+                            <p>
+                                A Dislexia é um transtorno de aprendizagem específico que afeta principalmente a capacidade de ler e
+                                compreender textos. Caracteriza-se por dificuldades no reconhecimento preciso e fluente de palavras,
+                                apesar de inteligência normal ou superior.
+                            </p>
+                            
+                            <h5>Características comuns:</h5>
+                            <ul>
+                                <li>Dificuldade na decodificação de palavras</li>
+                                <li>Leitura lenta e trabalhosa</li>
+                                <li>Problemas com ortografia</li>
+                                <li>Dificuldade em associar letras e sons</li>
+                                <li>Confusão com letras visualmente similares (p/q, b/d)</li>
+                                <li>Dificuldade na compreensão da leitura</li>
+                                <li>Problemas com sequenciamento e memória de curto prazo</li>
+                            </ul>
+                            
+                            <h5>Tratamento e Suporte:</h5>
+                            <p>
+                                Intervenções educacionais específicas, como abordagens multissensoriais, são eficazes. 
+                                Adaptações em sala de aula, como tempo adicional para provas e uso de tecnologias assistivas,
+                                podem ajudar significativamente no desempenho acadêmico.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Importância da Identificação Precoce</h5>
+            <p>
+                Identificar características neurodivergentes precocemente pode ajudar a proporcionar suporte adequado, 
+                adaptações educacionais e intervenções que podem melhorar significativamente a qualidade de vida e 
+                o desenvolvimento de crianças e adolescentes.
+            </p>
+            <p>
+                <strong>No entanto, é crucial lembrar:</strong> Apenas profissionais especializados podem realizar
+                diagnósticos formais. Este teste de triagem é apenas um primeiro passo para identificar possíveis 
+                características que podem merecer uma investigação mais aprofundada.
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}

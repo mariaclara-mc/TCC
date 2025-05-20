@@ -1,0 +1,83 @@
+{% extends 'diverge/base.html' %}
+
+{% block content %}
+<div class="container py-5">
+    <h1 class="mb-4">Política de Privacidade</h1>
+    
+    <div class="card mb-4">
+        <div class="card-body">
+            <h5 class="card-title">Resumo da nossa política</h5>
+            <p>
+                <strong>O Diverge valoriza sua privacidade e não coleta dados pessoais.</strong> Nenhuma 
+                informação fornecida durante o teste é armazenada permanentemente em nossos servidores.
+            </p>
+        </div>
+    </div>
+    
+    <div class="card mb-4">
+        <div class="card-body">
+            <h5 class="card-title">Coleta e Uso de Dados</h5>
+            <p>
+                O Diverge não solicita informações pessoais identificáveis como nome, endereço, email ou 
+                qualquer outro dado que possa identificar diretamente um indivíduo.
+            </p>
+            <p>
+                As respostas fornecidas durante o teste são utilizadas exclusivamente para calcular os resultados 
+                da triagem e são mantidas apenas temporariamente durante a sessão do navegador. Após o fechamento 
+                do navegador ou a finalização da sessão, todos os dados são descartados permanentemente.
+            </p>
+        </div>
+    </div>
+    
+    <div class="card mb-4">
+        <div class="card-body">
+            <h5 class="card-title">Armazenamento de Dados</h5>
+            <p>
+                Não realizamos armazenamento permanente de respostas, resultados ou quaisquer outros dados 
+                relacionados ao teste. Não utilizamos cookies para rastrear usuários ou armazenar informações 
+                de sessão permanentemente.
+            </p>
+            <p>
+                O processamento das respostas ocorre localmente e temporariamente apenas para fornecer o 
+                resultado da triagem.
+            </p>
+        </div>
+    </div>
+    
+    <div class="card mb-4">
+        <div class="card-body">
+            <h5 class="card-title">Compartilhamento de Dados</h5>
+            <p>
+                Como não coletamos ou armazenamos dados pessoais, não há compartilhamento de informações com 
+                terceiros, empresas parceiras, instituições de ensino ou quaisquer outras entidades.
+            </p>
+            <p>
+                Nosso site não utiliza serviços de análise que poderiam rastrear o comportamento do usuário.
+            </p>
+        </div>
+    </div>
+    
+    <div class="card mb-4">
+        <div class="card-body">
+            <h5 class="card-title">Segurança</h5>
+            <p>
+                Embora não coletemos dados pessoais, mantemos medidas de segurança apropriadas para proteger 
+                nosso site contra acesso não autorizado ou alterações maliciosas.
+            </p>
+        </div>
+    </div>
+    
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Contato</h5>
+            <p>
+                Se você tiver dúvidas sobre esta política de privacidade ou sobre como o Diverge funciona, 
+                entre em contato conosco através da nossa <a href="{% url 'contato' %}">página de contato</a>.
+            </p>
+            <p>
+                <strong>Última atualização desta política:</strong> Abril de 2025.
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,91 @@
+{% extends 'diverge/base.html' %}
+
+{% block content %}
+<div class="container py-5">
+    <h1 class="mb-4">Sobre o Projeto Diverge</h1>
+    
+    <div class="card mb-4">
+        <div class="card-body">
+            <h5 class="card-title">O que é o Diverge?</h5>
+            <p>
+                O Diverge é uma ferramenta de triagem desenvolvida como Trabalho de Conclusão de Curso (TCC)
+                para identificar possíveis indícios de neurodivergências em estudantes, focando em três condições principais:
+                TDAH (Transtorno do Déficit de Atenção com Hiperatividade), TEA (Transtorno do Espectro Autista) e Dislexia.
+            </p>
+            <p>
+                O objetivo é facilitar a identificação precoce de características neurodivergentes, permitindo que
+                estudantes busquem avaliação profissional adequada quando necessário.
+            </p>
+        </div>
+    </div>
+    
+    <div class="row mb-4">
+        <div class="col-md-4 mb-3">
+            <div class="card h-100">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="card-title mb-0">TDAH</h5>
+                </div>
+                <div class="card-body">
+                    <p>
+                        O Transtorno do Déficit de Atenção com Hiperatividade é caracterizado por padrões persistentes
+                        de desatenção, hiperatividade e impulsividade que interferem no funcionamento e desenvolvimento.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4 mb-3">
+            <div class="card h-100">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="card-title mb-0">TEA</h5>
+                </div>
+                <div class="card-body">
+                    <p>
+                        O Transtorno do Espectro Autista é caracterizado por diferenças na comunicação social,
+                        interação social e comportamentos repetitivos ou restritos.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4 mb-3">
+            <div class="card h-100">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="card-title mb-0">Dislexia</h5>
+                </div>
+                <div class="card-body">
+                    <p>
+                        A Dislexia é um transtorno de aprendizagem que afeta a capacidade de leitura, escrita e processamento
+                        de linguagem, apesar de inteligência normal ou acima da média.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="card mb-4">
+        <div class="card-body">
+            <h5 class="card-title">Nossa Metodologia</h5>
+            <p>
+                As perguntas utilizadas neste teste foram elaboradas por profissionais de saúde e são baseadas
+                em critérios de avaliação reconhecidos. O algoritmo analisa as respostas e calcula a probabilidade
+                de presença de características associadas a cada uma das neurodivergências.
+            </p>
+            <p>
+                <strong>Importante:</strong> Este teste NÃO substitui avaliação médica ou diagnóstico profissional.
+                É apenas uma ferramenta de triagem inicial.
+            </p>
+        </div>
+    </div>
+    
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Equipe</h5>
+            <p>
+                Este projeto foi desenvolvido como Trabalho de Conclusão de Curso por alunos do curso [Nome do Curso].
+            </p>
+            <!-- Adicione informações sobre a equipe aqui -->
+        </div>
+    </div>
+</div>
+{% endblock %}

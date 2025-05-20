@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2>Cadastrar Escola</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-success">Cadastrar</button>
+        <a href="{% url 'login_escola' %}" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>
+{% endblock %}
